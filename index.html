@@ -9,16 +9,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#eef2f7; --surface:#ffffff; --ink:#14213d; --muted:#4a5878;
-  --accent:#4f46e5; --accent-2:#1f9e8f; --line:#d3dbe8;
+:root{--bg:#fbf3f6;--surface:#ffffff;--ink:#00022E;--muted:#4b4e72;--accent:#00022E;--accent-2:#DCAEBE;--rose-text:#9b3f62;--tagbg:#f4e1e8;--line:#ecd3dc;--on-accent:#ffffff;
   --display:'Bricolage Grotesque',system-ui,sans-serif;
   --body:'DM Sans',system-ui,sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0f1629; --surface:#18213b; --ink:#eef2f7; --muted:#a8b3cc; --accent:#8b85ff; --accent-2:#4fd1c0; --line:#2b3659}
+  :root{--bg:#00022E;--surface:#0a0e4a;--ink:#f8eef2;--muted:#b9b6d4;--accent:#DCAEBE;--accent-2:#DCAEBE;--rose-text:#DCAEBE;--tagbg:#151a62;--line:#232870;--on-accent:#00022E}
 }
 *{box-sizing:border-box;margin:0}
+.tag{background:var(--tagbg)}
+h2{border-left-color:var(--accent-2)}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
 a{color:var(--accent)}
@@ -35,12 +35,12 @@ h3{font-size:1.25rem;margin-bottom:6px}
 p{max-width:68ch}
 /* Home */
 #home{padding-top:96px;padding-bottom:84px}
-#home .hi{font-weight:700;color:var(--accent-2);margin-bottom:10px}
+#home .hi{font-weight:700;color:var(--rose-text);margin-bottom:10px}
 h1{font-size:clamp(3rem,9vw,6.2rem);font-weight:800;letter-spacing:-.03em;margin-bottom:20px}
 #home .lead{font-size:1.2rem;color:var(--muted);margin-bottom:12px}
 .status{display:inline-block;margin:14px 0 28px;padding:8px 16px;border:2px solid var(--ink);border-radius:999px;font-weight:700;font-size:.95rem}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 24px;border-radius:10px;font-weight:700;text-decoration:none;background:var(--accent);color:#fff}
+.btn{display:inline-block;padding:12px 24px;border-radius:10px;font-weight:700;text-decoration:none;background:var(--accent);color:var(--on-accent)}
 .btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
 .btn:hover{transform:translateY(-2px)}
 /* cards */
@@ -60,7 +60,7 @@ ul.plain li{padding:8px 0;border-bottom:1px solid var(--line)}
 ul.plain li:last-child{border:0}
 footer{text-align:center;padding:30px 20px;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
-.badge{display:inline-block;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--accent-2);color:#0f1629;margin-bottom:10px}
+.badge{display:inline-block;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--accent-2);color:#00022E;margin-bottom:10px}
 .muted{color:var(--muted);font-size:.9rem}
 </style>
 </head>
@@ -154,7 +154,7 @@ footer{text-align:center;padding:30px 20px;color:var(--muted);border-top:1px sol
     </article>
     <article class="card">
       <h3>Reloop AI</h3>
-      <p>An AI project our team built during a 24-hour hackathon. Reloop is a circular-economy marketplace designed to facilitate sustainable product lifecycles through item reselling, repairing, upcycling, recycling, and composting. It works as a prototype, but it was not deployed and still has some logic issues.</p>
+      <p>An AI project our team built during a 24-hour hackathon. It works as a prototype, but it was not deployed and still has some logic issues that I want to fix and improve.</p>
       <div class="tags"><span class="tag">AI</span><span class="tag">Hackathon</span><span class="tag">Teamwork</span></div>
       <p style="margin-top:12px"><a href="https://github.com/joshika-who/reloop-ai">View on GitHub</a></p>
     </article>
@@ -174,7 +174,7 @@ footer{text-align:center;padding:30px 20px;color:var(--muted);border-top:1px sol
     <div class="card">
       <h3>Awards</h3>
       <ul class="plain">
-        <li><strong>Runner-up, Best Council</strong>: Epistemia, an inter-school science MUN. I was one of the council heads for the council Climate Action Council in Class 12.</li>
+        <li><strong>Runner-up, Best Council</strong>: Epistemia, an inter-school science MUN. I was one of the council heads in Class 12.</li>
       </ul>
     </div>
     <div class="card">
@@ -187,7 +187,7 @@ footer{text-align:center;padding:30px 20px;color:var(--muted);border-top:1px sol
     <div class="card">
       <h3>Participation</h3>
       <ul class="plain">
-        <li>24-hour hackathon conducted by university</li>
+        <li>24-hour hackathon conducted by my university</li>
         <li>Hacktoberfest hackathon conducted by NIAT</li>
         <li>Epistemia 2024 science symposium, Climate Action Council (Class 11), Delhi Public School, Nacharam</li>
       </ul>
